@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MVP Booking App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Quick Service Booking</h1>
+        <p>Book your service in seconds</p>
+    </header>
+
+    <main>
+        <form id="bookingForm">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Service:</label>
+            <select id="service" required>
+                <option value="">Select a service</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Repair">Repair</option>
+                <option value="Consultation">Consultation</option>
+            </select>
+
+            <label>Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <div id="message"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
